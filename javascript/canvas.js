@@ -1,15 +1,28 @@
 class HangmanCanvas {
   constructor(secretWord) {
     this.context = document.getElementById('hangman').getContext('2d');
-    // ... your code goes here
+    this.secretWord = secretWord
+    this.drawX = 250
+    this.drawY = 250
+    this.linewidth = 15
   }
 
   createBoard() {
-    // ... your code goes here
+    this.context.clearRect(0, 0, canvas.width, canvas.height);
+    const img = new Image()
+    img.src = "../images/hangman-logo.png"
+    img.onload = () => {
+    this.context.drawImage (img, 0, 0, 0, 50)
   }
 
   drawLines() {
-    // ... your code goes here
+    this.context.beginPath();
+    this.context.moveTo(240, this.lineYStart);
+    this.context.lineTo(120, this.lineYStart);
+    this.context.lineTo(180, 350);
+    this.context.closePath();
+    this.context.stroke();
+  
   }
 
   writeCorrectLetter(index) {
