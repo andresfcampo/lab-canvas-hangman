@@ -19,7 +19,7 @@ class HangmanCanvas {
     this.context.beginPath();
     this.context.moveTo(250, this.drawX);
     this.context.lineTo(150, this.drawY);
-    this.context.lineTo(200, 350);
+    this.context.lineTo(180, 350);
     this.context.closePath();
     this.context.stroke();
   

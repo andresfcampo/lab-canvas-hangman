@@ -63,8 +63,8 @@ if (startGameButton) {
     hangman = new Hangman(['node', 'javascript', 'react', 'miami', 'paris', 'amsterdam', 'lisboa']);
 
     hangman.secretWord = hangman.pickWord();
-    hangmanCanvas = new HangmanCanvas(hangman.secretWord)
-    hangmanCanvas.createBoard();
+    hangmanCanvas = new HangmanCanvas(hangman.secretWord
+
   });
 }
 
